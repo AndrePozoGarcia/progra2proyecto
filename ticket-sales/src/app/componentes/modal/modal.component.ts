@@ -18,7 +18,7 @@ export class ModalComponent {
     private vistaPrincipalService: VistaPrincipalService
   ) {}
 
-  public visible = false;
+  public visible:boolean = false;
   public total = 0;
   public eventos: Evento[] = [];
 

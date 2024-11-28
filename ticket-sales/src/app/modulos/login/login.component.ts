@@ -34,7 +34,8 @@ export default class LoginComponent {
   constructor(private fb: FormBuilder,
    private authService: AuthService,
     private messageService: MessageService,
-    private router: Router) {
+    private router: Router) 
+    {
     this.loginForm = this.fb.group<FormLogin>({
       email: new FormControl('', {
         nonNullable: true,
