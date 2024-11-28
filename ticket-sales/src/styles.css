@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout-main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 90px;
+}
+.white-menubar{
+  background-color: rgb(238, 215, 172);
+  color: black;
+}
+
+.option-menu{
+background-color: rgb(209, 127, 27);
+}
+
