@@ -3,18 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { ButtonModule } from 'primeng/button';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { HeaderComponent } from './layout/cabecera/cabecera.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './componentes/modal/modal.component';
+import { RegisstroComponent } from './modulos/regisstro/regisstro.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RegisstroComponent],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    ButtonModule,
     HeaderComponent,
     ModalComponent,
     BrowserAnimationsModule,
